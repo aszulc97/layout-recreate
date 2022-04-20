@@ -5,11 +5,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Section />
-      <Section />
-      <Section />
-      <Section />
-      <Section />
+      <Services />
     </div>
   );
 }
@@ -21,7 +17,10 @@ function Header() {
       <div id="header">
         <div id="heading">
           <h1>Blockchain finally made accessible</h1>
-          <p>Unleash the potential Unleash the potential Unleash the potential Unleash the potential</p>
+          <p>
+            Unleash the potential Unleash the potential Unleash the potential Unleash the potential Unleash the potential Unleash
+            the potential Unleash the potential Unleash the potential
+          </p>
           <Button />
         </div>
         <img alt="react logo" src={logo}></img>
@@ -54,10 +53,6 @@ function Nav() {
   );
 }
 
-function Section() {
-  return <section></section>;
-}
-
 function ListItem() {
   return <li>Our services</li>;
 }
@@ -87,6 +82,44 @@ function LogoItem() {
         />
       </svg>
       <p>yourlogo</p>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <section>
+      <Subheader />
+      <div id="services">
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+      </div>
+    </section>
+  );
+}
+
+function Subheader() {
+  return (
+    <>
+      <h5>Our services</h5>
+      <h2>Where we can add value</h2>
+    </>
+  );
+}
+
+function Service() {
+  return (
+    <div className="service">
+      <img alt="react logo" src={logo}></img>
+      <h4>Strategy</h4>
+      <p>
+        Thank you for today! Advice was super impressed with what you brought to the table. They were looking for ideas, and they
+        got a ton.
+      </p>
     </div>
   );
 }

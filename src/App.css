@@ -12,7 +12,9 @@ nav ul {
   font-weight: 900;
 }
 
-section,
+section {
+  padding: 4rem 15rem;
+}
 header {
   padding: 0 15rem;
 }
@@ -30,6 +32,7 @@ button {
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 header {
@@ -55,7 +58,7 @@ header img {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 0;
 }
 
@@ -73,4 +76,42 @@ header p {
   font-weight: 900;
   display: flex;
   align-items: center;
+}
+
+h2,
+h5 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 0 0 5rem 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+  margin: 2rem 0 0.3rem 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service img {
+  width: 30%;
+  margin-bottom: 1rem;
 }
