@@ -13,8 +13,9 @@ nav ul {
 }
 
 section {
-  padding: 4rem 15rem;
+  padding: 5rem 15rem;
 }
+
 header {
   padding: 0 15rem;
 }
@@ -84,8 +85,8 @@ h5 {
 }
 
 h2 {
-  font-size: 4rem;
-  margin: 0 0 5rem 0;
+  font-size: 3.5rem;
+  margin: 0 0 4rem 0;
 }
 
 h4 {
@@ -102,7 +103,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
-  padding: 0 5rem;
+  padding: 0 7rem;
   text-align: center;
 }
 
@@ -111,7 +112,53 @@ h5 {
   flex-direction: column;
   align-items: center;
 }
+
 .service img {
   width: 30%;
   margin-bottom: 1rem;
+}
+
+#testimonials {
+  background-color: rgb(24, 24, 87);
+  color: white;
+  display: flex;
+  padding: 5rem 0 5rem 15rem;
+}
+
+#testimonials h2,
+#testimonials h5,
+#testimonialText p {
+  text-align: start;
+  margin: 0;
+}
+
+#testimonials h2 {
+  margin: 2rem 0;
+  width: 13ch;
+}
+
+.testimonial {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.testimonial p:last-child {
+  font-weight: 900;
+}
+
+#testimonials p {
+  width: 24ch;
+}
+
+#testimonialText {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonialCont {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
 }
