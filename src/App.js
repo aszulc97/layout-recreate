@@ -22,7 +22,7 @@ function Header() {
             Unleash the potential Unleash the potential Unleash the potential Unleash the potential Unleash the potential Unleash
             the potential Unleash the potential Unleash the potential
           </p>
-          <Button />
+          <Button text="Get started >" />
         </div>
         <img alt="react logo" src={logo}></img>
       </div>
@@ -43,23 +43,23 @@ function Nav() {
       <p>Byont</p>
       <nav>
         <ul>
-          <ListItem />
-          <ListItem />
-          <ListItem />
-          <ListItem />
+          <ListItem name="Who we are" />
+          <ListItem name="The problems" />
+          <ListItem name="Our services" />
+          <ListItem name="Testimonials" />
         </ul>
       </nav>
-      <Button />
+      <Button text="Contact us" />
     </div>
   );
 }
 
-function ListItem() {
-  return <li>Our services</li>;
+function ListItem(props) {
+  return <li>{props.name}</li>;
 }
 
-function Button() {
-  return <button>Click me</button>;
+function Button(props) {
+  return <button>{props.text}</button>;
 }
 
 function LogoItem() {
@@ -92,12 +92,12 @@ function Services() {
     <section>
       <Subheader />
       <div id="services">
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
+        <Service title="Strategy" />
+        <Service title="Marketing" />
+        <Service title="Product" />
+        <Service title="Legality" />
+        <Service title="Safety" />
+        <Service title="Protection" />
       </div>
     </section>
   );
@@ -112,11 +112,11 @@ function Subheader() {
   );
 }
 
-function Service() {
+function Service(props) {
   return (
     <div className="service">
       <img alt="react logo" src={logo}></img>
-      <h4>Strategy</h4>
+      <h4>{props.title}</h4>
       <p>
         Thank you for today! Advice was super impressed with what you brought to the table. They were looking for ideas, and they
         got a ton.
@@ -130,7 +130,7 @@ function Testimonials() {
     <section id="testimonials">
       <div id="testimonialText">
         <Subheader />
-        <p>Stacy's mom she's got it goin' on she's all I want and I've waited so long</p>
+        <p>Stacy's mom has got it goin' on she's all I want and I've waited so long</p>
       </div>
       <div id="testimonialCont">
         <Testimonial />
